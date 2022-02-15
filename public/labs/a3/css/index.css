@@ -76,10 +76,12 @@ p#id-selector-2 {
     border-color: #7070ff;
 }
 .padded-top-left {
-    padding-top: 50px; padding-left: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 .padded-bottom-right {
-    padding-bottom: 50px; padding-right: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
 .padding-fat {
     padding: 50px;
@@ -88,16 +90,19 @@ p#id-selector-2 {
     margin-bottom: 50px;
 }
 .margin-right-left {
-    margin-left: 50px; margin-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .margin-all-around {
     margin: 30px;
 }
 .rounded-corners-top {
-    border-top-left-radius: 40px; border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 .rounded-corners-bottom {
-    border-bottom-left-radius: 40px; border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 .rounded-corners-all-around {
     border-radius: 50px;
