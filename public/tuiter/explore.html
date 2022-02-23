@@ -1,113 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!--    <meta charset="UTF-8">-->
     <title>Title</title>
+    <link href="../labs/a3/css/index.css" rel="stylesheet"/>
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="explore.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<div class="bg-color-black">
 <a href="navigation.html">Back</a>
-<div class="wd-feed-container wd-page-bg">
-    <div class="wd-solid-border">
-        <div class="wd-search-container wd-top-bar-row wd-padding-left">
-            <div class="wd-search-row wd-rounded-corner wd-background-gray">
-                <img src="icons8-search-32.png" class="wd-search-image wd-search-left-col"></img>
-                <div class="wd-search-right-col wd-fg-color-gray wd-search-font">Search Twitter</div>
-            </div>
-            <a href="explore-settings.html">
-                <img src="icons8-gear-64.png" class="wd-settings wd-search-image"></img>
-            </a>
-        </div>
-        <div class="wd-feed-tabs">
-            <div class="wd-for-you wd-link-font wd-active-link">For you</div>
-            <div class="wd-trending wd-link-font wd-inactive-link-color">Trending</div>
-            <div class="wd-covid-19 wd-link-font wd-inactive-link-color">COVID-19</div>
-            <div class="wd-news wd-link-font wd-inactive-link-color">News</div>
-            <div class="wd-sports wd-link-font wd-inactive-link-color">Sports</div>
-            <div class="wd-entertainment wd-link-font wd-inactive-link-color">Entertainment</div>
-        </div>
-    </div>
-    <div class="wd-solid-border wd-break-box">
+<h2>Size</h2>
+<div class="container d-block d-sm-none fa-2x">XS</div>
+<div class="container d-none d-sm-block d-md-none fa-2x">S</div>
+<div class="container d-none d-md-block d-lg-none fa-2x">M</div>
+<div class="container d-none d-lg-block d-xl-none fa-2x">L</div>
+<div class="container d-none d-xl-block d-xxl-none fa-2x">XL</div>
+<div class="container d-none d-xxl-block">
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <ul class="list-group border border-1 rounded">
+                <li class="list-group-item d-flex justify-content-between align-items-start border-bottom">
+                    <i class="fa fa-twitter fa-inverse"></i>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
+                    <a class="nav-link" href="#"><i class="fa fa-home" style="font-size: 1.1em"></i> Link</a></li>
+                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
+                    <a class="nav-link" href="#"><i class="fa fa-hashtag fa-inverse"></i> Link</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
+                    <a class="nav-link" href="#"><i class="fa fa-envelope-o fa-inverse"></i> Link</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
+                    <a class="nav-link" href="#"><i class="fa fa-bookmark-o fa-inverse"></i> Link</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
+                    <a class="nav-link" href="#"><i class="fa fa-file-text-o fa-inverse"></i> Link</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
+                    <a class="nav-link" href="#"><i class="fa fa-user-o fa-inverse"></i> Link</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
+                    <span class="fa-stack ">
+                        <i class="fa fa-circle fa-stack-1x fa-inverse" style="font-size: 1em"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-2x" style="font-size: 1em"></i>
+                    </span>
 
-    </div>
-    <div class="wd-solid-border">
-        <div class="wd-suggested-topic wd-bottom-border wd-tuit-grid">
-            <div class="wd-tuit-top">
-                <p class="wd-tuit-topic-font wd-padding-left">Trending in Science</p>
-                <div class="wd-tuit-title-font wd-padding-left">
-                    First visible-light images of Venus’ surface captured from space
-                </div>
-                <p class="wd-tuit-topic-font wd-padding-left">5K Tweets</p>
-            </div>
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+            </ul>
         </div>
-        <div class="wd-suggested-author wd-bottom-border wd-tuit-grid">
-            <div class="grid-row">
-                <div class="wd-grid-tuit-left">
-                    <p class="wd-tuit-byline-font wd-padding-left">The Boston Globe
-                        <img src="icons8-verified-account-48.png" class="wd-verified-img">
-                        <span class="wd-tuit-topic-font"> · Yesterday</span></p>
-                    <div class="wd-tuit-title-font wd-padding-left">
-                        Tatum scores 24, Celtics beat Denver for 7th straight win
-                    </div>
+        <div class="col-5 bg-color-yellow">
+            <div class="row justify-content-between">
+                <div class="col-10 bg-color-white rounded-pill mt-2">
+                    <form class="d-flex">
+                        <i class="fa fa-search opacity-75 m-auto" style="font-size: 1em"></i>
+                        <input class="form-control ms-3 wd-no-border" type="search" placeholder="Search Twitter"
+                               aria-label="Search">
+                    </form>
                 </div>
-                <div class="wd-grid-tuit-right">
-                    <img src="celtics.jpeg" class="wd-feed-picture">
-                </div>
+                <div class="col-1 justify-content-end"><i class="fa fa-cog mt-2"
+                                                          style="font-size: 2em; color: dodgerblue"></i></div>
             </div>
+
         </div>
-        <div class="wd-suggested-live wd-bottom-border wd-tuit-grid">
-            <div class="grid-row">
-                <div class="wd-grid-tuit-left">
-                    <p class="wd-tuit-topic-font wd-padding-left">SUPERBOWL · LIVE</p>
-                    <div class="wd-tuit-title-font wd-padding-left">
-                        Rams and Bengals face off in Superbowl LVI
-                    </div>
-                </div>
-                <div class="wd-grid-tuit-right">
-                    <img src="nfl.svg" class="wd-feed-picture">
-                </div>
-            </div>
+        <div class="col-3 fg-color-black">
+            <ul class="list-group border border-1 rounded">
+                <li class="list-group-item">
+                    Who to follow
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" href="#">Link</a></li>
+                <li class="list-group-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
         </div>
-        <div class="wd-suggested-topic wd-bottom-border wd-tuit-grid">
-            <div class="wd-tuit-top">
-                <p class="wd-tuit-topic-font wd-padding-left">Trending in Entertainment</p>
-                <div class="wd-tuit-title-font wd-padding-left">
-                    “Marry Me” Celebrates the Charismatic Equality of J. Lo and Owen Wilson
-                </div>
-                <p class="wd-tuit-topic-font wd-padding-left">60K Tweets</p>
-            </div>
-        </div>
-        <div class="wd-suggested-author wd-bottom-border wd-tuit-grid">
-            <div class="grid-row">
-                <div class="wd-grid-tuit-left">
-                    <p class="wd-tuit-byline-font wd-padding-left">The Washington Post
-                        <img src="icons8-verified-account-48.png" class="wd-verified-img">
-                        <span class="wd-tuit-topic-font"> · 2h</span></p>
-                    <div class="wd-tuit-title-font wd-padding-left">
-                        Inside two decisive plays: The score and the hit that made the Rams champions
-                    </div>
-                </div>
-                <div class="wd-grid-tuit-right">
-                    <img src="lvi.jpeg" class="wd-feed-picture">
-                </div>
-            </div>
-        </div>
-        <div class="wd-suggested-live wd-bottom-border wd-tuit-grid">
-            <div class="grid-row">
-                <div class="wd-grid-tuit-left">
-                    <p class="wd-tuit-topic-font wd-padding-left">OLYMPICS · LIVE</p>
-                    <div class="wd-tuit-title-font wd-padding-left">
-                        USA's Humphries, Meyers Taylor go one-two in women's monobob
-                    </div>
-                </div>
-                <div class="wd-grid-tuit-right">
-                    <img src="olympics.png" class="wd-feed-picture">
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
-
-
 </body>
 </html>

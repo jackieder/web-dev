@@ -49,7 +49,9 @@ p#id-selector-2 {
 .fg-color-green {
     color: green;
 }
-
+.bg-color-white {
+    background-color: white;
+}
 .bg-color-yellow {
     background-color: #ffff07;
 }
@@ -58,6 +60,9 @@ p#id-selector-2 {
     background-color: #7070ff;
 }
 
+.bg-color-black {
+    background-color: black;
+}
 .bg-color-red {
     background-color: #ff7070;
 }
@@ -249,12 +254,12 @@ p#id-selector-2 {
     float: left;
 }
 
-.btn-primary.override-bs {
-    background-color: #a90dfd;
-    border-color: #fd0d51;
-    border-width: 10px;
-    border-radius: 20px;
-    border-style: dashed;
-    font-size: 2em;
-    font-weight: bolder;
-}
+/*.btn-primary.override-bs {*/
+/*    background-color: #a90dfd;*/
+/*    border-color: #fd0d51;*/
+/*    border-width: 10px;*/
+/*    border-radius: 20px;*/
+/*    border-style: dashed;*/
+/*    font-size: 2em;*/
+/*    font-weight: bolder;*/
+/*}*/
