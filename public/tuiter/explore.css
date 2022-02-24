@@ -138,6 +138,29 @@
     width: 100%;
 }
 
+.wd-feed-picture-lg {
+    border-radius: 8px;
+    height: 90px;
+    width: 90px;
+}
+
+.wd-feed-picture-m {
+    border-radius: 8px;
+    height: 80px;
+    width: 80px;
+}
+
+.wd-feed-picture-sm {
+    border-radius: 8px;
+    height: 70px;
+    width: 70px;
+}
+.wd-feed-picture-xs {
+    border-radius: 8px;
+    height: 70px;
+    width: 70px;
+}
+
 .wd-search-image {
     height: 20px;
     width: 20px;
