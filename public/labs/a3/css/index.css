@@ -63,6 +63,9 @@ p#id-selector-2 {
 .bg-color-black {
     background-color: black;
 }
+.bg-color-grey {
+    background-color: grey;
+}
 .bg-color-red {
     background-color: #ff7070;
 }
@@ -253,6 +256,7 @@ p#id-selector-2 {
     width: 20%;
     float: left;
 }
+
 
 /*.btn-primary.override-bs {*/
 /*    background-color: #a90dfd;*/

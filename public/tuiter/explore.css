@@ -1,8 +1,4 @@
-/*Background colors and styles*/
 .wd-background-gray {
-    background-color: #414040;
-}
-.wd-background-black {
     background-color: #414040;
 }
 
@@ -11,10 +7,6 @@
     border-style: solid;
     border-color: rgb(47, 51, 54);
     border-width: thin;
-}
-.wd-no-border {
-    border: 0;
-    box-shadow: none;
 }
 .wd-rounded-corner {
     border-radius: 50px;
@@ -36,18 +28,18 @@
 .wd-padding-around{
     padding: 16px;
 }
-/*!*Font sizes and colors*!*/
-/*.wd-search-font {*/
-/*    font-family: Arial;*/
-/*    font-size: 15px;*/
-/*    padding: 5px;*/
-/*}*/
-/*.wd-link-font {*/
-/*    font-family: Arial;*/
-/*    font-size: 15px;*/
-/*    font-weight: bold;*/
-/*    padding: 16px;*/
-/*}*/
+/*Font sizes and colors*/
+.wd-search-font {
+    font-family: Arial;
+    font-size: 15px;
+    padding: 5px;
+}
+.wd-link-font {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 16px;
+}
 .wd-inactive-link-color {
     color: rgb(110, 118, 125);
 }
@@ -71,6 +63,11 @@
     font-size: 13px;
     font-weight: bold;
     color: white;
+}
+.wd-profile-pic {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
 }
 
 /*Parent container*/
@@ -137,9 +134,8 @@
 }
 .wd-feed-picture {
     border-radius: 8px;
-    height: 100px;
-    width: 100px;
-    margin: 16px;
+    height: 100%;
+    width: 100%;
 }
 
 .wd-search-image {
@@ -154,12 +150,87 @@
     padding-top: 2px;
     filter: invert(90%);
 }
+.wd-no-border {
+    border: 0;
+    box-shadow: none;
+}
+
+.wd-padding-left-0 {
+    padding-left: 0;
+}
+
+.active.override-bs {
+    font-weight: bold;
+    background-color: black;
+    border: 0;
+}
 
 .nav-link {
-    padding-left: 0;
     color: white;
 }
 
-/*.list-group-item {*/
-/*    background-color: black;*/
-/*}*/
+.list-group-item {
+    background-color: black;
+}
+
+.override-bs-bg {
+    background-color: #2a2a2a;
+}
+
+
+.fa-stack {
+    padding: 0;
+}
+
+.nav-tabs.override-bs {
+    border: 0;
+    width: 100%;
+}
+
+.card-img-overlay {
+    top:auto;
+}
+
+.card.override-bs {
+    border: 0px;
+}
+
+.img {
+    width: auto;
+    height: auto;
+}
+
+.form-control.override-bs {
+    background-color: grey;
+    color: lightgray;
+}
+
+.nav-link.active.override-bs {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-bottom: 3px solid dodgerblue;
+
+}
+
+.h6.override-bs {
+    color: grey;
+}
+
+.wd-border-rounded-top {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.wd-border-rounded-bottom {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.wd-img-invert {
+    filter: invert(100%);
+    background-color: white;
+}
+
+.link-override-bs {
+    color: dodgerblue;
+}

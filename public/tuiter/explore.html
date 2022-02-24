@@ -5,59 +5,62 @@
     <title>Title</title>
     <link href="../labs/a3/css/index.css" rel="stylesheet"/>
     <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="explore.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="explore.css" rel="stylesheet"/>
 </head>
-<body>
-<div class="bg-color-black">
+<body class="bg-color-black">
 <a href="navigation.html">Back</a>
 <h2>Size</h2>
-<div class="container d-block d-sm-none fa-2x">XS</div>
-<div class="container d-none d-sm-block d-md-none fa-2x">S</div>
-<div class="container d-none d-md-block d-lg-none fa-2x">M</div>
-<div class="container d-none d-lg-block d-xl-none fa-2x">L</div>
-<div class="container d-none d-xl-block d-xxl-none fa-2x">XL</div>
-<div class="container d-none d-xxl-block">
+<div class="container d-block d-sm-none">
     <div class="row justify-content-center">
-        <div class="col-2">
-            <ul class="list-group border border-1 rounded">
-                <li class="list-group-item d-flex justify-content-between align-items-start border-bottom">
-                    <i class="fa fa-twitter fa-inverse"></i>
+        <div class="col-2 mx-2">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <i class="fa fa-twitter fa-inverse" style="font-size: 1.25em"></i>
+                    <a class="nav-link" href="#"></a>
                 </li>
-                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
-                    <a class="nav-link" href="#"><i class="fa fa-home" style="font-size: 1.1em"></i> Link</a></li>
-                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
-                    <a class="nav-link" href="#"><i class="fa fa-hashtag fa-inverse"></i> Link</a>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-home fa-inverse" style="font-size: 1.25em"></i></a>
                 </li>
-                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
-                    <a class="nav-link" href="#"><i class="fa fa-envelope-o fa-inverse"></i> Link</a>
+                <li class="list-group-item active override-bs d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-hashtag fa-inverse" style="font-size: 1.1em"></i></a>
                 </li>
-                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
-                    <a class="nav-link" href="#"><i class="fa fa-bookmark-o fa-inverse"></i> Link</a>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-bell-o fa-inverse" style="font-size: 1.1em"></i></a>
                 </li>
-                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
-                    <a class="nav-link" href="#"><i class="fa fa-file-text-o fa-inverse"></i> Link</a>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-envelope-o fa-inverse"
+                                                     style="font-size: 1.1em"></i></a>
                 </li>
-                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
-                    <a class="nav-link" href="#"><i class="fa fa-user-o fa-inverse"></i> Link</a>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-bookmark-o fa-inverse"
+                                                     style="font-size: 1.1em"></i></a>
                 </li>
-                <li class="list-group-item d-flex justify-content-start align-items-center border-bottom">
-                    <span class="fa-stack ">
-                        <i class="fa fa-circle fa-stack-1x fa-inverse" style="font-size: 1em"></i>
-                        <i class="fa fa-ellipsis-h fa-stack-2x" style="font-size: 1em"></i>
-                    </span>
-
-                    <a class="nav-link" href="#">Link</a>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-file-text-o fa-inverse"
+                                                    style="font-size: 1.1em"></i></a>
                 </li>
-
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-user-o fa-inverse" style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex align-items-center ps-0">
+                    <a class="nav-link" href="#">
+                        <span class="fa-stack">
+                        <i class="fa fa-circle-thin fa-stack-1x fa-inverse ps-2 " style="font-size: 1.5em"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-2x fa-inverse pt-2 ps-2" style="font-size: 1em"></i>
+                    </span></a>
+                </li>
             </ul>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary fw-bold rounded-pill mt-2" type="button">Tweet</button>
+            </div>
         </div>
-        <div class="col-5 bg-color-yellow">
-            <div class="row justify-content-between">
-                <div class="col-10 bg-color-white rounded-pill mt-2">
+        <div class="col-9 bg-color-black border-start border-end border-gray">
+            <div class="row justify-content-between my-2 mx-3">
+                <div class="col-10 bg-color-grey rounded-pill mt-2">
                     <form class="d-flex">
                         <i class="fa fa-search opacity-75 m-auto" style="font-size: 1em"></i>
-                        <input class="form-control ms-3 wd-no-border" type="search" placeholder="Search Twitter"
+                        <input class="form-control override-bs ms-3 wd-no-border" type="search" value="Search Twitter"
                                aria-label="Search">
                     </form>
                 </div>
@@ -65,23 +68,926 @@
                                                           style="font-size: 2em; color: dodgerblue"></i></div>
             </div>
 
-        </div>
-        <div class="col-3 fg-color-black">
-            <ul class="list-group border border-1 rounded">
-                <li class="list-group-item">
-                    Who to follow
+            <ul class="nav nav-tabs override-bs justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For you</a>
                 </li>
-                <li class="list-group-item">
-                    <a class="nav-link" href="#">Link</a></li>
-                <li class="list-group-item">
-                    <a class="nav-link" href="#">Link</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COVID-19</a>
                 </li>
-                <li class="list-group-item">
-                    <a class="nav-link" href="#">Link</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active override-bs" href="#">Entertainment</a>
                 </li>
             </ul>
+            <div class="row border-top pt-1">
+                <div class="card override-bs text-white p-0">
+                    <img src="starship.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-img-overlay override-bs">
+                        <h2 class="card-title">SpaceX's Starship</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between align-items-center">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">ReactJS <i class="fa fa-check-circle-o"></i> <span
+                            class="h6 text-white-50"> - 2h</span></p>
+                    <p class="h6 text-white">React.js is a component based front end library that makes it very easy to
+                        build Single Page Applications or SPAs</p>
+                </div>
+                <div class="col-2 mx-2 my-2 ">
+                    <img src="reactjs.png" class="wd-feed-picture img-fluid" alt="...">
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h5 text-white">JavaScript <i class="fa fa-check-circle-o"></i> <span
+                            class="h6 text-white-50"> - 2h</span></p>
+                    <p class="h6 text-white">JavaScript is a programming language that can run on browsers as well as
+                        desktops.</p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+                <div class="col-2 mx-2 my-2">
+                    <img src="javascript.png" class="wd-feed-picture" alt="...">
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">JQuery</p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">NodeJS <i class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"> - 2h</span>
+                    </p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+                <div class="col-2 mx-2 my-2">
+                    <img src="nodejs.png" class="wd-feed-picture" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container d-none d-sm-block d-md-none">
+    <div class="row justify-content-center">
+        <div class="col-2 mx-2">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <i class="fa fa-twitter fa-inverse" style="font-size: 1.25em"></i>
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-home fa-inverse" style="font-size: 1.25em"></i></a>
+                </li>
+                <li class="list-group-item active override-bs d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-hashtag fa-inverse" style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-bell-o fa-inverse" style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-envelope-o fa-inverse"
+                                                     style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-bookmark-o fa-inverse"
+                                                     style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-file-text-o fa-inverse"
+                                                    style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-user-o fa-inverse" style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex align-items-center ps-0">
+                    <a class="nav-link" href="#">
+                        <span class="fa-stack">
+                        <i class="fa fa-circle-thin fa-stack-1x fa-inverse ps-2 " style="font-size: 1.5em"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-2x fa-inverse pt-2 ps-2" style="font-size: 1em"></i>
+                    </span></a>
+                </li>
+            </ul>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary fw-bold rounded-pill mt-2" type="button">Tweet</button>
+            </div>
+        </div>
+        <div class="col-9 bg-color-black border-start border-end border-gray">
+            <div class="row justify-content-between my-2 mx-3">
+                <div class="col-10 bg-color-grey rounded-pill mt-2">
+                    <form class="d-flex">
+                        <i class="fa fa-search opacity-75 m-auto" style="font-size: 1em"></i>
+                        <input class="form-control override-bs ms-3 wd-no-border" type="search" value="Search Twitter"
+                               aria-label="Search">
+                    </form>
+                </div>
+                <div class="col-1 justify-content-end"><i class="fa fa-cog mt-2"
+                                                          style="font-size: 2em; color: dodgerblue"></i></div>
+            </div>
+
+            <ul class="nav nav-tabs override-bs justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COVID-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active override-bs" href="#">Entertainment</a>
+                </li>
+            </ul>
+            <div class="row border-top pt-1">
+                <div class="card override-bs text-white p-0">
+                    <img src="starship.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-img-overlay override-bs">
+                        <h2 class="card-title">SpaceX's Starship</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between align-items-center">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">ReactJS <i class="fa fa-check-circle-o"></i> <span
+                            class="h6 text-white-50"> - 2h</span></p>
+                    <p class="h6 text-white">React.js is a component based front end library that makes it very easy to
+                        build Single Page Applications or SPAs</p>
+                </div>
+                <div class="col-2 mx-2 my-2 ">
+                    <img src="reactjs.png" class="wd-feed-picture img-fluid" alt="...">
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h5 text-white">JavaScript <i class="fa fa-check-circle-o"></i> <span
+                            class="h6 text-white-50"> - 2h</span></p>
+                    <p class="h6 text-white">JavaScript is a programming language that can run on browsers as well as
+                        desktops.</p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+                <div class="col-2 mx-2 my-2">
+                    <img src="javascript.png" class="wd-feed-picture" alt="...">
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">JQuery</p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">NodeJS <i class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"> - 2h</span>
+                    </p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+                <div class="col-2 mx-2 my-2">
+                    <img src="nodejs.png" class="wd-feed-picture" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container d-none d-md-block d-lg-none">
+    <div class="row justify-content-center">
+        <div class="col-2 mx-2">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <i class="fa fa-twitter fa-inverse" style="font-size: 1.25em"></i>
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-home fa-inverse" style="font-size: 1.25em"></i></a>
+                </li>
+                <li class="list-group-item active override-bs d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-hashtag fa-inverse" style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-bell-o fa-inverse" style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-envelope-o fa-inverse"
+                                                     style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-bookmark-o fa-inverse"
+                                                     style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-file-text-o fa-inverse"
+                                                    style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-user-o fa-inverse" style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex align-items-center ps-0">
+                    <a class="nav-link" href="#">
+                        <span class="fa-stack">
+                        <i class="fa fa-circle-thin fa-stack-1x fa-inverse ps-2 " style="font-size: 1.5em"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-2x fa-inverse pt-2 ps-2" style="font-size: 1em"></i>
+                    </span></a>
+                </li>
+            </ul>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary fw-bold rounded-pill mt-2" type="button">Tweet</button>
+            </div>
+        </div>
+        <div class="col-8 bg-color-black border-start border-end border-gray">
+            <div class="row justify-content-between my-2 mx-3">
+                <div class="col-10 bg-color-grey rounded-pill mt-2">
+                    <form class="d-flex">
+                        <i class="fa fa-search opacity-75 m-auto" style="font-size: 1em"></i>
+                        <input class="form-control override-bs ms-3 wd-no-border" type="search" value="Search Twitter"
+                               aria-label="Search">
+                    </form>
+                </div>
+                <div class="col-1 justify-content-end"><i class="fa fa-cog mt-2"
+                                                          style="font-size: 2em; color: dodgerblue"></i></div>
+            </div>
+
+            <ul class="nav nav-tabs override-bs justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COVID-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active override-bs" href="#">Entertainment</a>
+                </li>
+            </ul>
+            <div class="row border-top pt-1">
+                <div class="card override-bs text-white p-0">
+                    <img src="starship.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-img-overlay override-bs">
+                        <h2 class="card-title">SpaceX's Starship</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between align-items-center">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">ReactJS <i class="fa fa-check-circle-o"></i> <span
+                            class="h6 text-white-50"> - 2h</span></p>
+                    <p class="h6 text-white">React.js is a component based front end library that makes it very easy to
+                        build Single Page Applications or SPAs</p>
+                </div>
+                <div class="col-2 mx-2 my-2 ">
+                    <img src="reactjs.png" class="wd-feed-picture img-fluid" alt="...">
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h5 text-white">JavaScript <i class="fa fa-check-circle-o"></i> <span
+                            class="h6 text-white-50"> - 2h</span></p>
+                    <p class="h6 text-white">JavaScript is a programming language that can run on browsers as well as
+                        desktops.</p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+                <div class="col-2 mx-2 my-2">
+                    <img src="javascript.png" class="wd-feed-picture" alt="...">
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">JQuery</p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">NodeJS <i class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"> - 2h</span>
+                    </p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+                <div class="col-2 mx-2 my-2">
+                    <img src="nodejs.png" class="wd-feed-picture" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container d-none d-lg-block d-xl-none">
+    <div class="row justify-content-center">
+        <div class="col-1 mx-2">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <i class="fa fa-twitter fa-inverse" style="font-size: 1.25em"></i>
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-home fa-inverse" style="font-size: 1.25em"></i></a>
+                </li>
+                <li class="list-group-item active override-bs d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-hashtag fa-inverse" style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-bell-o fa-inverse" style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-envelope-o fa-inverse"
+                                                     style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"> <i class="fa fa-bookmark-o fa-inverse"
+                                                     style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-file-text-o fa-inverse"
+                                                    style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <a class="nav-link" href="#"><i class="fa fa-user-o fa-inverse" style="font-size: 1.1em"></i></a>
+                </li>
+                <li class="list-group-item d-flex align-items-center ps-0">
+                    <a class="nav-link" href="#">
+                        <span class="fa-stack">
+                        <i class="fa fa-circle-thin fa-stack-1x fa-inverse ps-2 " style="font-size: 1.5em"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-2x fa-inverse pt-2 ps-2" style="font-size: 1em"></i>
+                    </span></a>
+                </li>
+            </ul>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary fw-bold rounded-pill mt-2" type="button">Tweet</button>
+            </div>
+        </div>
+        <div class="col-6 bg-color-black border-start border-end border-gray">
+            <div class="row justify-content-between my-2 mx-3">
+                <div class="col-10 bg-color-grey rounded-pill mt-2">
+                    <form class="d-flex">
+                        <i class="fa fa-search opacity-75 m-auto" style="font-size: 1em"></i>
+                        <input class="form-control override-bs ms-3 wd-no-border" type="search" value="Search Twitter"
+                               aria-label="Search">
+                    </form>
+                </div>
+                <div class="col-1 justify-content-end"><i class="fa fa-cog mt-2"
+                                                          style="font-size: 2em; color: dodgerblue"></i></div>
+            </div>
+
+            <ul class="nav nav-tabs override-bs justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COVID-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active override-bs" href="#">Entertainment</a>
+                </li>
+            </ul>
+            <div class="row border-top pt-1">
+                <div class="card override-bs text-white p-0">
+                    <img src="starship.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-img-overlay override-bs">
+                        <h2 class="card-title">SpaceX's Starship</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between align-items-center">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">ReactJS <i class="fa fa-check-circle-o"></i> <span
+                            class="h6 text-white-50"> - 2h</span></p>
+                    <p class="h6 text-white">React.js is a component based front end library that makes it very easy to
+                        build Single Page Applications or SPAs</p>
+                </div>
+                <div class="col-2 mx-2 my-2 ">
+                    <img src="reactjs.png" class="wd-feed-picture img-fluid" alt="...">
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h5 text-white">JavaScript <i class="fa fa-check-circle-o"></i> <span
+                            class="h6 text-white-50"> - 2h</span></p>
+                    <p class="h6 text-white">JavaScript is a programming language that can run on browsers as well as
+                        desktops.</p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+                <div class="col-2 mx-2 my-2">
+                    <img src="javascript.png" class="wd-feed-picture" alt="...">
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">JQuery</p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">NodeJS <i class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"> - 2h</span>
+                    </p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+                <div class="col-2 mx-2 my-2">
+                    <img src="nodejs.png" class="wd-feed-picture" alt="...">
+                </div>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <div class="row override-bs-bg justify-content-start align-items-center text-white ms-3 py-3 wd-border-rounded-top">
+                <p class="h5 fw-bold">Who to follow</p>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                <div class="col-2"><img src="java.png" class="wd-profile-pic" alt="..."></div>
+                <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Java <i class="fa fa-check-circle-o"></i>
+                    <span class="h6 text-white-50"></span>
+                </p></span><p class="h6 override-bs">@Java</p>
+                </div>
+                <div class="col-3 p-0">
+                    <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                </div>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                <div class="col-2"><img src="relativity.png" class="wd-profile-pic wd-img-invert" alt="..."></div>
+                <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Relativity Space <i
+                        class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"></span>
+                </p></span><p class="h6 override-bs">@relativityspace</p>
+                </div>
+                <div class="col-3 p-0">
+                    <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                </div>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                <div class="col-2"><img src="virgin.png" class="wd-profile-pic" alt="..."></div>
+                <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Virgin Galactic<i
+                        class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"></span>
+                </p></span><p class="h6 override-bs">@virgingalactic</p>
+                </div>
+                <div class="col-3 p-0">
+                    <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                </div>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                <div class="col-2"><img src="nasa.jpeg" class="wd-profile-pic" alt="..."></div>
+                <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">NASA<i class="fa fa-check-circle-o"></i>
+                    <span class="h6 text-white-50"></span>
+                </p></span><p class="h6 override-bs">@NASA</p>
+                </div>
+                <div class="col-3 p-0">
+                    <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                </div>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                <div class="col-2"><img src="tesla.jpeg" class="wd-profile-pic" alt="..."></div>
+                <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Tesla<i class="fa fa-check-circle-o"></i>
+                    <span class="h6 text-white-50"></span>
+                </p></span><p class="h6 override-bs">@Tesla</p>
+                </div>
+                <div class="col-3 p-0 mx-auto">
+                    <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                </div>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center text-white ms-3 wd-border-rounded-bottom">
+                <a class="nav-link link-override-bs" href="#">Show more</a>
+            </div>
+            <div class="row justify-content-evenly align-items-center ms-3 py-3">
+                <p class="h6">Terms of Service Privacy Policy Cookie Policy</p>
+                <p class="h6">Ads info More... (c) 2021 Twitter, Inc</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container d-none d-xl-block d-xxl-none">
+    <div class="row justify-content-center">
+        <div class="row justify-content-center">
+            <div class="col-2">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <i class="fa fa-twitter fa-inverse" style="font-size: 1.25em"></i>
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-start align-items-center">
+                        <i class="fa fa-home fa-inverse" style="font-size: 1.25em"></i>
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="list-group-item active override-bs d-flex justify-content-start align-items-center">
+                        <i class="fa fa-hashtag fa-inverse" style="font-size: 1.1em"></i>
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-start align-items-center">
+                        <i class="fa fa-bell-o fa-inverse" style="font-size: 1.1em"></i>
+                        <a class="nav-link" href="#">Notifications</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-start align-items-center">
+                        <i class="fa fa-envelope-o fa-inverse" style="font-size: 1.1em"></i>
+                        <a class="nav-link" href="#">Messages</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-start align-items-center">
+                        <i class="fa fa-bookmark-o fa-inverse" style="font-size: 1.1em"></i>
+                        <a class="nav-link" href="#">Bookmarks</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-start align-items-center">
+                        <i class="fa fa-file-text-o fa-inverse" style="font-size: 1.1em"></i>
+                        <a class="nav-link" href="#">Lists</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-start align-items-center">
+                        <i class="fa fa-user-o fa-inverse" style="font-size: 1.1em"></i>
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center ps-0">
+                        <span class="fa-stack">
+                        <i class="fa fa-circle-thin fa-stack-1x fa-inverse ps-2 " style="font-size: 1.5em"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-2x fa-inverse pt-2 ps-2" style="font-size: 1em"></i>
+                    </span>
+                        <a class="nav-link" href="#">More</a>
+                    </li>
+                </ul>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary fw-bold rounded-pill mt-2" type="button">Tweet</button>
+                </div>
+            </div>
+            <div class="col-6 bg-color-black border-start border-end border-gray">
+                <div class="row justify-content-between my-2 mx-3">
+                    <div class="col-10 bg-color-grey rounded-pill mt-2">
+                        <form class="d-flex">
+                            <i class="fa fa-search opacity-75 m-auto" style="font-size: 1em"></i>
+                            <input class="form-control override-bs ms-3 wd-no-border" type="search"
+                                   value="Search Twitter"
+                                   aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="col-1 justify-content-end"><i class="fa fa-cog mt-2"
+                                                              style="font-size: 2em; color: dodgerblue"></i></div>
+                </div>
+
+                <ul class="nav nav-tabs override-bs justify-content-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">COVID-19</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active override-bs" href="#">Entertainment</a>
+                    </li>
+                </ul>
+                <div class="row border-top pt-1">
+                    <div class="card override-bs text-white p-0">
+                        <img src="starship.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-img-overlay override-bs">
+                            <h2 class="card-title">SpaceX's Starship</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-top pt-1 justify-content-between align-items-center">
+                    <div class="col-8 py-1 px-2">
+                        <p class="h6">Web Development</p>
+                        <p class="h5 text-white">ReactJS <i class="fa fa-check-circle-o"></i> <span
+                                class="h6 text-white-50"> - 2h</span></p>
+                        <p class="h6 text-white">React.js is a component based front end library that makes it very easy
+                            to
+                            build Single Page Applications or SPAs</p>
+                    </div>
+                    <div class="col-2 mx-2 my-2 ">
+                        <img src="reactjs.png" class="wd-feed-picture img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="row border-top pt-1 justify-content-between">
+                    <div class="col-8 py-1 px-2">
+                        <p class="h5 text-white">JavaScript <i class="fa fa-check-circle-o"></i> <span
+                                class="h6 text-white-50"> - 2h</span></p>
+                        <p class="h6 text-white">JavaScript is a programming language that can run on browsers as well
+                            as
+                            desktops.</p>
+                        <p class="h6">123K Tweets</p>
+                    </div>
+                    <div class="col-2 mx-2 my-2">
+                        <img src="javascript.png" class="wd-feed-picture" alt="...">
+                    </div>
+                </div>
+                <div class="row border-top pt-1 justify-content-between">
+                    <div class="col-8 py-1 px-2">
+                        <p class="h6">Web Development</p>
+                        <p class="h5 text-white">JQuery</p>
+                        <p class="h6">123K Tweets</p>
+                    </div>
+                </div>
+                <div class="row border-top pt-1 justify-content-between">
+                    <div class="col-8 py-1 px-2">
+                        <p class="h6">Web Development</p>
+                        <p class="h5 text-white">NodeJS <i class="fa fa-check-circle-o"></i> <span
+                                class="h6 text-white-50"> - 2h</span>
+                        </p>
+                        <p class="h6">123K Tweets</p>
+                    </div>
+                    <div class="col-2 mx-2 my-2">
+                        <img src="nodejs.png" class="wd-feed-picture" alt="...">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="row override-bs-bg justify-content-start align-items-center text-white ms-3 py-3 wd-border-rounded-top">
+                    <p class="h5 fw-bold">Who to follow</p>
+                </div>
+                <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                    <div class="col-2"><img src="java.png" class="wd-profile-pic" alt="..."></div>
+                    <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Java <i class="fa fa-check-circle-o"></i>
+                        <span class="h6 text-white-50"></span>
+                    </p></span><p class="h6 override-bs">@Java</p>
+                    </div>
+                    <div class="col-3 p-0">
+                        <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                    </div>
+                </div>
+                <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                    <div class="col-2"><img src="relativity.png" class="wd-profile-pic wd-img-invert" alt="..."></div>
+                    <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Relativity Space <i
+                            class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"></span>
+                    </p></span><p class="h6 override-bs">@relativityspace</p>
+                    </div>
+                    <div class="col-3 p-0">
+                        <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                    </div>
+                </div>
+                <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                    <div class="col-2"><img src="virgin.png" class="wd-profile-pic" alt="..."></div>
+                    <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Virgin Galactic<i
+                            class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"></span>
+                    </p></span><p class="h6 override-bs">@virgingalactic</p>
+                    </div>
+                    <div class="col-3 p-0">
+                        <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                    </div>
+                </div>
+                <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                    <div class="col-2"><img src="nasa.jpeg" class="wd-profile-pic" alt="..."></div>
+                    <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">NASA<i class="fa fa-check-circle-o"></i>
+                        <span class="h6 text-white-50"></span>
+                    </p></span><p class="h6 override-bs">@NASA</p>
+                    </div>
+                    <div class="col-3 p-0">
+                        <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                    </div>
+                </div>
+                <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                    <div class="col-2"><img src="tesla.jpeg" class="wd-profile-pic" alt="..."></div>
+                    <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Tesla<i class="fa fa-check-circle-o"></i>
+                        <span class="h6 text-white-50"></span>
+                    </p></span><p class="h6 override-bs">@Tesla</p>
+                    </div>
+                    <div class="col-3 p-0">
+                        <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                    </div>
+                </div>
+                <div class="row override-bs-bg justify-content-start align-items-center text-white ms-3 wd-border-rounded-bottom">
+                    <a class="nav-link link-override-bs" href="#">Show more</a>
+                </div>
+                <div class="row justify-content-evenly align-items-center ms-3 py-3">
+                    <p class="h6">Terms of Service Privacy Policy Cookie Policy</p>
+                    <p class="h6">Ads info More... (c) 2021 Twitter, Inc</p>
+                </div>
+            </div>
         </div>
 
+    </div>
+</div>
+<div class="container d-none d-xxl-block">
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <i class="fa fa-twitter fa-inverse" style="font-size: 1.25em"></i>
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <i class="fa fa-home fa-inverse" style="font-size: 1.25em"></i>
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="list-group-item active override-bs d-flex justify-content-start align-items-center">
+                    <i class="fa fa-hashtag fa-inverse" style="font-size: 1.1em"></i>
+                    <a class="nav-link" href="#">Explore</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <i class="fa fa-bell-o fa-inverse" style="font-size: 1.1em"></i>
+                    <a class="nav-link" href="#">Notifications</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <i class="fa fa-envelope-o fa-inverse" style="font-size: 1.1em"></i>
+                    <a class="nav-link" href="#">Messages</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <i class="fa fa-bookmark-o fa-inverse" style="font-size: 1.1em"></i>
+                    <a class="nav-link" href="#">Bookmarks</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <i class="fa fa-file-text-o fa-inverse" style="font-size: 1.1em"></i>
+                    <a class="nav-link" href="#">Lists</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <i class="fa fa-user-o fa-inverse" style="font-size: 1.1em"></i>
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="list-group-item d-flex align-items-center ps-0">
+                        <span class="fa-stack">
+                        <i class="fa fa-circle-thin fa-stack-1x fa-inverse ps-2 " style="font-size: 1.5em"></i>
+                        <i class="fa fa-ellipsis-h fa-stack-2x fa-inverse pt-2 ps-2" style="font-size: 1em"></i>
+                    </span>
+                    <a class="nav-link" href="#">More</a>
+                </li>
+            </ul>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary fw-bold rounded-pill mt-2" type="button">Tweet</button>
+            </div>
+        </div>
+        <div class="col-6 bg-color-black border-start border-end border-gray">
+            <div class="row justify-content-between my-2 mx-3">
+                <div class="col-10 bg-color-grey rounded-pill mt-2">
+                    <form class="d-flex">
+                        <i class="fa fa-search opacity-75 m-auto" style="font-size: 1em"></i>
+                        <input class="form-control override-bs ms-3 wd-no-border" type="search" value="Search Twitter"
+                               aria-label="Search">
+                    </form>
+                </div>
+                <div class="col-1 justify-content-end"><i class="fa fa-cog mt-2"
+                                                          style="font-size: 2em; color: dodgerblue"></i></div>
+            </div>
+
+            <ul class="nav nav-tabs override-bs justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COVID-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active override-bs" href="#">Entertainment</a>
+                </li>
+            </ul>
+            <div class="row border-top pt-1">
+                <div class="card override-bs text-white p-0">
+                    <img src="starship.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-img-overlay override-bs">
+                        <h2 class="card-title">SpaceX's Starship</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between align-items-center">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">ReactJS <i class="fa fa-check-circle-o"></i> <span
+                            class="h6 text-white-50"> - 2h</span></p>
+                    <p class="h6 text-white">React.js is a component based front end library that makes it very easy to
+                        build Single Page Applications or SPAs</p>
+                </div>
+                <div class="col-2 mx-2 my-2 ">
+                    <img src="reactjs.png" class="wd-feed-picture img-fluid" alt="...">
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h5 text-white">JavaScript <i class="fa fa-check-circle-o"></i> <span
+                            class="h6 text-white-50"> - 2h</span></p>
+                    <p class="h6 text-white">JavaScript is a programming language that can run on browsers as well as
+                        desktops.</p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+                <div class="col-2 mx-2 my-2">
+                    <img src="javascript.png" class="wd-feed-picture" alt="...">
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">JQuery</p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+            </div>
+            <div class="row border-top pt-1 justify-content-between">
+                <div class="col-8 py-1 px-2">
+                    <p class="h6">Web Development</p>
+                    <p class="h5 text-white">NodeJS <i class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"> - 2h</span>
+                    </p>
+                    <p class="h6">123K Tweets</p>
+                </div>
+                <div class="col-2 mx-2 my-2">
+                    <img src="nodejs.png" class="wd-feed-picture" alt="...">
+                </div>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <div class="row override-bs-bg justify-content-start align-items-center text-white ms-3 py-3 wd-border-rounded-top">
+                <p class="h5 fw-bold">Who to follow</p>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                <div class="col-2"><img src="java.png" class="wd-profile-pic" alt="..."></div>
+                <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Java <i class="fa fa-check-circle-o"></i>
+                    <span class="h6 text-white-50"></span>
+                </p></span><p class="h6 override-bs">@Java</p>
+                </div>
+                <div class="col-3 p-0">
+                    <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                </div>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                <div class="col-2"><img src="relativity.png" class="wd-profile-pic wd-img-invert" alt="..."></div>
+                <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Relativity Space <i
+                        class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"></span>
+                </p></span><p class="h6 override-bs">@relativityspace</p>
+                </div>
+                <div class="col-3 p-0">
+                    <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                </div>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                <div class="col-2"><img src="virgin.png" class="wd-profile-pic" alt="..."></div>
+                <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Virgin Galactic<i
+                        class="fa fa-check-circle-o"></i> <span class="h6 text-white-50"></span>
+                </p></span><p class="h6 override-bs">@virgingalactic</p>
+                </div>
+                <div class="col-3 p-0">
+                    <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                </div>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                <div class="col-2"><img src="nasa.jpeg" class="wd-profile-pic" alt="..."></div>
+                <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">NASA<i class="fa fa-check-circle-o"></i>
+                    <span class="h6 text-white-50"></span>
+                </p></span><p class="h6 override-bs">@NASA</p>
+                </div>
+                <div class="col-3 p-0">
+                    <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                </div>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center ms-3">
+                <div class="col-2"><img src="tesla.jpeg" class="wd-profile-pic" alt="..."></div>
+                <div class="col-7 pt-1 pb-0 px-0"><p class="h6 text-white">Tesla<i class="fa fa-check-circle-o"></i>
+                    <span class="h6 text-white-50"></span>
+                </p></span><p class="h6 override-bs">@Tesla</p>
+                </div>
+                <div class="col-3 p-0">
+                    <button class="btn btn-light fw-bold rounded-pill" type="button">Follow</button>
+                </div>
+            </div>
+            <div class="row override-bs-bg justify-content-start align-items-center text-white ms-3 wd-border-rounded-bottom">
+                <a class="nav-link link-override-bs" href="#">Show more</a>
+            </div>
+            <div class="row justify-content-evenly align-items-center ms-3 py-3">
+                <p class="h6">Terms of Service Privacy Policy Cookie Policy</p>
+                <p class="h6">Ads info More... (c) 2021 Twitter, Inc</p>
+            </div>
+        </div>
     </div>
 </div>
 </body>

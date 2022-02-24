@@ -100,6 +100,7 @@ body {
     width: 504px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .wd-feed-pic-description {
