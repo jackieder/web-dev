@@ -3,13 +3,13 @@ import WhoToFollowListItem from "./ListItem.js";
 
 const WhoToFollowList = () => {
     return(`
-<div class="list-group">
+<ul class="list-group">
  ${
         who.map(account => {
             return(WhoToFollowListItem(account));
         }).join('')
     }
-</div> `);
+</ul> `);
 }
 
 export default WhoToFollowList

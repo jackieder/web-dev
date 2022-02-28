@@ -1,0 +1,68 @@
+.wd-profile-pic {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.bg-color-grey {
+    background-color: grey;
+}
+
+.wd-feed-picture {
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+}
+.active.override-bs {
+    font-weight: bold;
+    background-color: black;
+    border: 0;
+}
+
+.override-bs-bg {
+    background-color: #2a2a2a;
+}
+
+
+.fa-stack {
+    padding: 0;
+}
+
+.nav-tabs.override-bs {
+    border: 0;
+    width: 100%;
+}
+
+.card-img-overlay {
+    top:auto;
+}
+
+.card.override-bs {
+    border: 0px;
+}
+
+.form-control.override-bs {
+    background-color: grey;
+    color: lightgray;
+}
+.h6.override-bs {
+    color: grey;
+}
+
+.wd-border-rounded-top {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.wd-border-rounded-bottom {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.wd-img-invert {
+    filter: invert(100%);
+    background-color: white;
+}
+
+.link-override-bs {
+    color: dodgerblue;
+}
