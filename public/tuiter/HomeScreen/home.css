@@ -1,0 +1,15 @@
+.card-body.override-bs {
+    padding: 0;
+}
+
+.row.override-bs {
+    padding: 0;
+}
+
+.col-10.override-bs {
+    padding: 0;
+}
+
+.a.override-bs {
+    color: grey;
+}
