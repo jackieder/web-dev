@@ -6,13 +6,13 @@ import HomeScreen from "./HomeScreen"
 const Tuiter = () => {
     return(
         <>
-            <ExploreScreen/>
-            <Link to="/hello">
-                Hello
-            </Link> |
-            <Link to="/Labs">
-                Labs
-            </Link>
+            {/*<HomeScreen/>*/}
+            {/*<Link to="/hello">*/}
+            {/*    Hello*/}
+            {/*</Link> |*/}
+            {/*<Link to="/Labs">*/}
+            {/*    Labs*/}
+            {/*</Link>*/}
         </>
     )
 };

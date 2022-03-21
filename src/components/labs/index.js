@@ -16,7 +16,7 @@ const Labs = () => {
             <Link to="/hello">
                 Hello
             </Link> |
-            <Link to="/tuiter">
+            <Link to="/tuiter/home">
                 Tuiter
             </Link>
             <h1>Non React.js Assignments</h1>

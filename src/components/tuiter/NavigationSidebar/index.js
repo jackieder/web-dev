@@ -44,9 +44,9 @@ const NavigationSidebar = (
             </div>
 
             <div className="d-grid mt-2">
-                <a href="tweet.html"
+                <div
                    className="btn btn-primary btn-block rounded-pill">
-                    Tweet</a>
+                    Tweet</div>
             </div>
         </>
     );
