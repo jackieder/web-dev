@@ -1,5 +1,6 @@
+import React from "react";
 import whos from "./who.json";
-import WhoToFollowListItem from "./ListItem.js";
+import WhoToFollowListItem from "./ListItem";
 
 const WhoToFollowList = () => {
     return(

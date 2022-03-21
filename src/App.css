@@ -43,10 +43,46 @@
   border-radius: 50%;
 }
 
-.wd-font-15em {
-  font-size: 1.75em;
+
+.wd-feed-picture-lg {
+  border-radius: 8px;
+  height: 90px;
+  width: 90px;
 }
 
-.wd-font-sm {
-  font-size: 3em;
+.wd-cog-format {
+  font-size: 2em;
+  color: #2a9fd6
+}
+
+.card-img-overlay {
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card.override-bs {
+  border: 0px;
+}
+
+
+.img {
+  width: auto;
+  height: auto;
+}
+
+.card-body.override-bs {
+  padding: 0;
+}
+
+.row.override-bs {
+  padding: 0;
+}
+
+.col-10.override-bs {
+  padding: 0;
+}
+
+.a.override-bs {
+  color: grey;
 }

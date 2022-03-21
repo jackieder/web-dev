@@ -6,7 +6,7 @@ const HelloWorld = () => {
     return(
         <>
             <h1>Hello World!</h1>
-            <Link to="/">
+            <Link to="/Labs">
                 Labs
             </Link> |
             <Link to="/tuiter">
