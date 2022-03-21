@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.wd-profile-pic {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.wd-font-15em {
+  font-size: 1.75em;
+}
+
+.wd-font-sm {
+  font-size: 3em;
+}

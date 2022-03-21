@@ -5,7 +5,7 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/hello-world";
 import Labs from "./components/labs/index.js";
-import Tuiter from "./components/tuiter";
+import Tuiter from "./components/tuiter/index.js";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 

@@ -1,4 +1,4 @@
-export default [
+[
     { avatarIcon: '../images/java.png',
         userName: 'Java', handle: 'Java', },
     { avatarIcon: '../images/relativity.png',

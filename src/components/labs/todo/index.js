@@ -1,13 +1,13 @@
-alert('Hello World!');
-import ToDoList from "./ToDoList.js";
-
-$('#wd-todo').append(`
-<div class="container">
-    <h1>Todo example</h1>
-</div>
- `);
-
-$('#wd-todo').append(` <div class="container">
-<h1>Todo example</h1>
-${ToDoList()}
-</div> `);
+import ToDoItem from "./ToDoItem.js";
+import todos from "./todos.json";
+const ToDoList = () => { return(
+    <ul>
+        {
+            todos.map(todo => {
+                return(<ToDoItem todo={todo}/>);
+            })
+        }
+    </ul>
+ );
+}
+export default ToDoList;
