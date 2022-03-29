@@ -45,12 +45,15 @@ const TuitListItem = ({
                 <div className="row d-flex justify-content-start align-items-center">
                     <div className="col-1 mx-2"><img src={tuit["avatar-image"]} className="wd-profile-pic" alt="..."/>
                     </div>
-                    <div className="col-10">
+                    <div className="col-8">
                         <p className="h6 fw-bold text-white">{tuit.postedBy.username}
                             {tuit.verified ? <i className="fa fa-circle-check fa-inverse ps-1"></i> : ''} <span
                                 className="h6 text-white-50">@{tuit.handle} - {tuit.time}</span>
                         </p>
                         <p className="h6">{tuit.tuit}</p>
+                    </div>
+                    <div className="col-1">
+                        <img src={tuit["logo-image"]} className="wd-feed-picture-lg" alt="..."/>
                     </div>
                     <div className="row d-flex justify-content-end align-items-center ps-4">
                         <div className="col-11">
