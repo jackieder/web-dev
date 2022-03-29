@@ -1,15 +1,16 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import TuitList from "./tuit-list";
-import WhatsHappening from "./whats-happening";
+import {useSelector} from "react-redux";
+import ProfileItem from "./profile-screen";
 
 
 
-const HomeScreen = () => {
+const ProfileScreen = () => {
+    const profile = useSelector(
+        state => state.profile);
     return(
         <>
-            <WhatsHappening/>
-            <TuitList/>
+            <ProfileItem profile={profile[0]}/>
             <Link to="/hello">
                 Hello
             </Link> |
@@ -19,6 +20,5 @@ const HomeScreen = () => {
         </>
     );
 }
-export default HomeScreen;
-
+export default ProfileScreen;
 

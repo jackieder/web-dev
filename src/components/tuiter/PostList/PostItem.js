@@ -23,7 +23,7 @@ const PostItem = ({
             <p class="h6 fw-bold text-white">{post.userName}
                 <i class="fa fa-circle-check fa-inverse ps-1"></i> <span class="h6 text-white-50">@{post.handle} - {post.time}</span>
             </p>
-            <p class="h6">{post.tweetContent}</p>
+            <p class="h6">${post.tweetContent}</p>
         </div>
          <div class="row d-flex justify-content-end align-items-center ps-4">
          <div class="col-11">

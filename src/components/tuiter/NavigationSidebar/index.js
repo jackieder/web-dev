@@ -29,7 +29,7 @@ const NavigationSidebar = (
                 <Link to="/tuiter/explore" className={`list-group-item list-group-item-action ${active === 'Lists' ? 'active' : ''}`}>
                     <i className="fa fa-file-alt fa-inverse"></i><span> Lists</span>
                 </Link>
-                <Link to="/tuiter/explore" className={`list-group-item list-group-item-action ${active === 'Profile' ? 'active' : ''}`}>
+                <Link to="/tuiter/profile" className={`list-group-item list-group-item-action ${active === 'Profile' ? 'active' : ''}`}>
                     <i className="fa fa-user fa-inverse"></i><span> Profile</span>
                 </Link>
                 <Link to="/tuiter/explore" className={`list-group-item list-group-item-action ${active === 'More' ? 'active' : ''}`}>
