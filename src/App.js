@@ -19,6 +19,7 @@ function App() {
             <div className="container">
                 <Routes>
                     <Route path="/">
+                        element={<Labs/>}/>
                         <Route path="labs"
                                element={<Labs/>}/>
                         <Route path="hello"
@@ -26,6 +27,8 @@ function App() {
                         <Route path="tuiter"
                                element={<Tuiter/>}>
                             <Route index
+                                   element={<HomeScreen/>}/>
+                            <Route path="home"
                                    element={<HomeScreen/>}/>
                             <Route path="explore"
                                    element={<ExploreScreen/>}/>
