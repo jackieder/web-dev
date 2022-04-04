@@ -1,5 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
+import {deleteTuit}
+    from "../../../actions/tuits-actions";
 
 const TuitListItem = ({
                           tuit = {
@@ -27,9 +29,7 @@ const TuitListItem = ({
                           }
                       }) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
+
     const likeTuit = () => {
         dispatch({type: 'like-tuit', tuit});
     };
@@ -37,8 +37,8 @@ const TuitListItem = ({
     return (
         <>
             <li className="list-group-item">
-                    <i className="row d-flex justify-content-end m-1" onClick={() =>
-                        deleteTuit(tuit)}
+                    <i className="row d-flex justify-content-end m-1" onClick={() => deleteTuit(
+                        dispatch, tuit)}
                        className="fas fa-remove fa-sm
                   fa-pull-right"></i>
 
