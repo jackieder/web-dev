@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {createTuit}
+    from "../../actions/tuits-actions";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening]
@@ -10,12 +12,16 @@ const WhatsHappening = () => {
         });
     }
     const dispatch = useDispatch();
+    const [newTuit, setNewTuit] =
+        useState({tuit: 'New tuit', username: 'jd'});
+
     return (
         <>
             <div className="row d-flex">
-      <textarea className="form-control m-1 bs-override-textarea" value={whatsHappening}
+      <textarea className="form-control m-1 bs-override-textarea" value={newTuit.tuit}
                 onChange={(event) =>
-                    setWhatsHappening(event.target.value)}>
+                    setNewTuit({...newTuit,
+                        tuit: event.target.value})}>
       </textarea>
             </div>
             <div className="d-flex justify-content-between align-items-center">
@@ -25,7 +31,7 @@ const WhatsHappening = () => {
                     <i className="fa fa-solid fa-face-grin fa-inverse fa-xl m-1"></i>
                     <i className="fa fa-solid fa-calendar fa-inverse fa-xl m-1"></i>
                 </div>
-                <button className="btn btn-primary rounded-pill float-right m-1" onClick={tuitClickHandler}>
+                <button className="btn btn-primary rounded-pill float-right m-1" onClick={() => createTuit(dispatch, newTuit)}>
                     Tuit
                 </button>
             </div>

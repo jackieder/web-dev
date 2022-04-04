@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit}
+import {deleteTuit, updateTuit}
     from "../../../actions/tuits-actions";
 
 const TuitListItem = ({
@@ -30,9 +30,6 @@ const TuitListItem = ({
                       }) => {
     const dispatch = useDispatch();
 
-    const likeTuit = () => {
-        dispatch({type: 'like-tuit', tuit});
-    };
 
     return (
         <>
@@ -46,7 +43,7 @@ const TuitListItem = ({
                     <div className="col-1 mx-2"><img src={tuit["avatar-image"]} className="wd-profile-pic" alt="..."/>
                     </div>
                     <div className="col-8">
-                        <p className="h6 fw-bold text-white">{tuit.postedBy.username}
+                        <p className="h6 fw-bold text-white">{tuit.postedBy ? tuit.postedBy.username : " "}
                             {tuit.verified ? <i className="fa fa-circle-check fa-inverse ps-1"></i> : ''} <span
                                 className="h6 text-white-50">@{tuit.handle} - {tuit.time}</span>
                         </p>
@@ -80,21 +77,17 @@ const TuitListItem = ({
                         </div>
                         <div className="col my-3 px-0">
                             <span className="text-white-50"><i
-                                className="fa fa-retweet"></i> {tuit.stats.retuits ? tuit.stats.retuits : ""}</span>
+                                className="fa fa-retweet"></i> {tuit.stats ? tuit.stats.retuits : ""}</span>
                         </div>
                         <div className="col my-3 px-0">
-                            <span onClick={likeTuit}>
-                                {
-                                    tuit.liked &&
-                                    <i className="fas fa-heart me-1"
-                                        style={{color: 'red'}}></i>
-                                }
-                                {
-                                    !tuit.liked &&
-                                    <i className="far fa-heart me-1"></i>
-                                }
-                                {tuit.stats && tuit.stats.likes}
-                            </span>
+                            <div>
+                                Likes: {tuit.likes}
+                                <i onClick={() => updateTuit(dispatch, {
+                                    ...tuit,
+                                    likes: tuit.likes + 1
+                                })} className="far fa-thumbs-up ms-2"></i>
+                            </div>
+
                         </div>
                         <div className="col my-3 px-0">
                             <span className="text-white-50"><i className="fa fa-arrow-up-from-bracket"></i></span>
