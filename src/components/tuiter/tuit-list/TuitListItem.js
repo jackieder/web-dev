@@ -81,10 +81,10 @@ const TuitListItem = ({
                         </div>
                         <div className="col my-3 px-0">
                             <div>
-                                Likes: {tuit.likes}
+                                Likes: {tuit.stats.likes}
                                 <i onClick={() => updateTuit(dispatch, {
                                     ...tuit,
-                                    likes: tuit.likes + 1
+                                    likes: tuit.stats.likes++
                                 })} className="far fa-thumbs-up ms-2"></i>
                             </div>
 
