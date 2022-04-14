@@ -19,8 +19,8 @@ const TuitListItem = ({
                               "attachments": {
                                   "video": "unKvMC3Y1kI"
                               },
-                              "logo-image": "../../../images/react-blue.png",
-                              "avatar-image": "../../../images/react-blue.png",
+                              "logoImage": "../../../images/react-blue.png",
+                              "avatarImage": "../../../images/react-blue.png",
                               "stats": {
                                   "comments": 123,
                                   "retuits": 234,
@@ -40,7 +40,7 @@ const TuitListItem = ({
                   fa-pull-right"></i>
 
                 <div className="row d-flex justify-content-start align-items-center">
-                    <div className="col-1 mx-2"><img src={tuit["avatar-image"]} className="wd-profile-pic" alt="..."/>
+                    <div className="col-1 mx-2"><img src={tuit.avatarImage} className="wd-profile-pic" alt="..."/>
                     </div>
                     <div className="col-8">
                         <p className="h6 fw-bold text-white">{tuit.postedBy ? tuit.postedBy.username : " "}
@@ -50,7 +50,7 @@ const TuitListItem = ({
                         <p className="h6">{tuit.tuit}</p>
                     </div>
                     <div className="col-1">
-                        <img src={tuit["logo-image"]} className="wd-feed-picture-lg" alt="..."/>
+                        <img src={tuit.logoImage} className="wd-feed-picture-lg" alt="..."/>
                     </div>
                     <div className="row d-flex justify-content-end align-items-center ps-4">
                         <div className="col-11">
