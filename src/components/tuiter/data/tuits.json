@@ -14,8 +14,8 @@
     "attachments": {
       "video": "unKvMC3Y1kI"
     },
-    "logo-image": "https://cdn.worldvectorlogo.com/logos/react-1.svg",
-    "avatar-image": "https://cdn.worldvectorlogo.com/logos/react-1.svg",
+    "logoImage": "https://cdn.worldvectorlogo.com/logos/react-1.svg",
+    "avatarImage": "https://cdn.worldvectorlogo.com/logos/react-1.svg",
     "stats": {
       "comments": 123,
       "retuits": 234,
@@ -37,8 +37,8 @@
       "image": "../images/starship.png"
     },
     "time": "last month",
-    "logo-image": "../../../images/node.png",
-    "avatar-image": "../../../images/node.png",
+    "logoImage": "../../../images/node.png",
+    "avatarImage": "../../../images/node.png",
     "tuits": "120K",
     "stats": {
       "comments": 123,
@@ -59,8 +59,8 @@
     "time": "1 day",
     "title": "JavaScript is programming language that can run on browsers as well as desktops",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "logo-image": "../../../images/js.png",
-    "avatar-image": "../../../images/js.png",
+    "logoImage": "../../../images/js.png",
+    "avatarImage": "../../../images/js.png",
     "tuits": "123K",
     "stats": {
       "comments": 123,
@@ -80,8 +80,8 @@
     "title": "jQuery",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "time": "last week",
-    "logo-image": "../../../images/jquery.png",
-    "avatar-image": "../../../images/jquery.png",
+    "logoImage": "../../../images/jquery.png",
+    "avatarImage": "../../../images/jquery.png",
     "tuits": "122K",
     "stats": {
       "comments": 123,
@@ -101,8 +101,8 @@
     "title": "",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "time": "last month",
-    "logo-image": "../../../images/node.png",
-    "avatar-image": "../../../images/node.png",
+    "logoImage": "../../../images/node.png",
+    "avatarImage": "../../../images/node.png",
     "tuits": "120K",
     "stats": {
       "comments": 123,
